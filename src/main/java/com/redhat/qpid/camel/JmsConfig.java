@@ -2,9 +2,6 @@ package com.redhat.qpid.camel;
 
 import org.apache.camel.component.amqp.AMQPComponent;
 import org.apache.qpid.jms.JmsConnectionFactory;
-import org.apache.qpid.jms.transports.TransportOptions;
-import org.apache.qpid.jms.transports.TransportSupport;
-import org.messaginghub.pooled.jms.JmsPoolConnectionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,8 +10,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.connection.CachingConnectionFactory;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
-
-import javax.net.ssl.SSLContext;
 
 @Configuration
 public class JmsConfig {
